@@ -779,6 +779,12 @@
 		57A4D2451BA13F9700F7D4B1 /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
 		57A4D2461BA13F9700F7D4B1 /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		57A4D2471BA13F9700F7D4B1 /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		79AB27AE26E7957E00CA20EF /* macOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Application.xcconfig"; sourceTree = "<group>"; };
+		79AB27AF26E7957E00CA20EF /* macOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		79AB27B026E7957E00CA20EF /* macOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		79AB27B126E7957E00CA20EF /* macOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-Base.xcconfig"; sourceTree = "<group>"; };
+		79AB27B226E7957E00CA20EF /* macOS-XCTest.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-XCTest.xcconfig"; sourceTree = "<group>"; };
+		79AB27B326E7957E00CA20EF /* macOS-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
 		7A70657D1A3F88B8001E8354 /* RACKVOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACKVOProxy.h; sourceTree = "<group>"; };
 		7A70657E1A3F88B8001E8354 /* RACKVOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACKVOProxy.m; sourceTree = "<group>"; };
 		7A7065831A3F8967001E8354 /* RACKVOProxySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACKVOProxySpec.m; sourceTree = "<group>"; };
@@ -1052,11 +1058,6 @@
 		D047263319E49FE8006002AA /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
 		D047263419E49FE8006002AA /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		D047263519E49FE8006002AA /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
-		D047263719E49FE8006002AA /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
-		D047263819E49FE8006002AA /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
-		D047263919E49FE8006002AA /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
-		D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
-		D047263B19E49FE8006002AA /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		D047263C19E49FE8006002AA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D05E662419EDD82000904ACA /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C3131719EF2D9700984962 /* RACTestExampleScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACTestExampleScheduler.h; sourceTree = "<group>"; };
@@ -1139,6 +1140,19 @@
 				57A4D2471BA13F9700F7D4B1 /* tvOS-StaticLibrary.xcconfig */,
 			);
 			path = tvOS;
+			sourceTree = "<group>";
+		};
+		79AB27AD26E7957E00CA20EF /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				79AB27AE26E7957E00CA20EF /* macOS-Application.xcconfig */,
+				79AB27AF26E7957E00CA20EF /* macOS-Framework.xcconfig */,
+				79AB27B026E7957E00CA20EF /* macOS-StaticLibrary.xcconfig */,
+				79AB27B126E7957E00CA20EF /* macOS-Base.xcconfig */,
+				79AB27B226E7957E00CA20EF /* macOS-XCTest.xcconfig */,
+				79AB27B326E7957E00CA20EF /* macOS-DynamicLibrary.xcconfig */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		A97451321B3A935E00F48E55 /* watchOS */ = {
@@ -1484,7 +1498,7 @@
 			children = (
 				D047262619E49FE8006002AA /* Base */,
 				D047263119E49FE8006002AA /* iOS */,
-				D047263619E49FE8006002AA /* Mac OS X */,
+				79AB27AD26E7957E00CA20EF /* macOS */,
 				A97451321B3A935E00F48E55 /* watchOS */,
 				57A4D2431BA13F9700F7D4B1 /* tvOS */,
 				D047263C19E49FE8006002AA /* README.md */,
@@ -1533,18 +1547,6 @@
 				D047263519E49FE8006002AA /* iOS-StaticLibrary.xcconfig */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		D047263619E49FE8006002AA /* Mac OS X */ = {
-			isa = PBXGroup;
-			children = (
-				D047263719E49FE8006002AA /* Mac-Application.xcconfig */,
-				D047263819E49FE8006002AA /* Mac-Base.xcconfig */,
-				D047263919E49FE8006002AA /* Mac-DynamicLibrary.xcconfig */,
-				D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */,
-				D047263B19E49FE8006002AA /* Mac-StaticLibrary.xcconfig */,
-			);
-			path = "Mac OS X";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2820,6 +2822,9 @@
 			baseConfigurationReference = D047262919E49FE8006002AA /* Debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_NONNULL = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
@@ -2830,10 +2835,7 @@
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WARNING_CFLAGS = (
-					"$(inherited)",
-					"-Wnullability-completeness",
-				);
+				WARNING_CFLAGS = "$(inherited)";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -2843,6 +2845,9 @@
 			baseConfigurationReference = D047262B19E49FE8006002AA /* Release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_NONNULL = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2853,17 +2858,14 @@
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WARNING_CFLAGS = (
-					"$(inherited)",
-					"-Wnullability-completeness",
-				);
+				WARNING_CFLAGS = "$(inherited)";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		D047260119E49ED7006002AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */;
+			baseConfigurationReference = 79AB27AF26E7957E00CA20EF /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -2880,7 +2882,7 @@
 		};
 		D047260219E49ED7006002AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */;
+			baseConfigurationReference = 79AB27AF26E7957E00CA20EF /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -2897,7 +2899,7 @@
 		};
 		D047260419E49ED7006002AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
+			baseConfigurationReference = 79AB27B226E7957E00CA20EF /* macOS-XCTest.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -2915,7 +2917,7 @@
 		};
 		D047260519E49ED7006002AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
+			baseConfigurationReference = 79AB27B226E7957E00CA20EF /* macOS-XCTest.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -2996,6 +2998,9 @@
 			baseConfigurationReference = D047262A19E49FE8006002AA /* Profile.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_NONNULL = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -3005,17 +3010,14 @@
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WARNING_CFLAGS = (
-					"$(inherited)",
-					"-Wnullability-completeness",
-				);
+				WARNING_CFLAGS = "$(inherited)";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Profile;
 		};
 		D047263E19E4A008006002AA /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */;
+			baseConfigurationReference = 79AB27AF26E7957E00CA20EF /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -3031,7 +3033,7 @@
 		};
 		D047263F19E4A008006002AA /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
+			baseConfigurationReference = 79AB27B226E7957E00CA20EF /* macOS-XCTest.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -3079,6 +3081,9 @@
 			baseConfigurationReference = D047262C19E49FE8006002AA /* Test.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ANALYZER_NONNULL = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -3088,17 +3093,14 @@
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WARNING_CFLAGS = (
-					"$(inherited)",
-					"-Wnullability-completeness",
-				);
+				WARNING_CFLAGS = "$(inherited)";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Test;
 		};
 		D047264319E4A00B006002AA /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */;
+			baseConfigurationReference = 79AB27AF26E7957E00CA20EF /* macOS-Framework.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -3115,7 +3117,7 @@
 		};
 		D047264419E4A00B006002AA /* Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
+			baseConfigurationReference = 79AB27B226E7957E00CA20EF /* macOS-XCTest.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;

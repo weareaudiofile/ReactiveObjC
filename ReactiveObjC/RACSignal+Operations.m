@@ -863,7 +863,7 @@ static RACDisposable *subscribeForever (RACSignal *signal, void (^next)(id), voi
 	return [self firstOrDefault:defaultValue success:NULL error:NULL];
 }
 
-- (id)firstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError **)error {
+- (id)firstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError * __autoreleasing *)error {
 	NSCondition *condition = [[NSCondition alloc] init];
 	condition.name = [NSString stringWithFormat:@"[%@] -firstOrDefault: %@ success:error:", self.name, defaultValue];
 
@@ -917,7 +917,7 @@ static RACDisposable *subscribeForever (RACSignal *signal, void (^next)(id), voi
 	return value;
 }
 
-- (BOOL)waitUntilCompleted:(NSError **)error {
+- (BOOL)waitUntilCompleted:(NSError * __autoreleasing *)error {
 	BOOL success = NO;
 
 	[[[self

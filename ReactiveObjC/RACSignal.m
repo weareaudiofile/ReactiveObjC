@@ -355,11 +355,11 @@
 
 static const NSTimeInterval RACSignalAsynchronousWaitTimeout = 10;
 
-- (id)asynchronousFirstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError **)error {
+- (id)asynchronousFirstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError * __autoreleasing *)error {
 	return [self asynchronousFirstOrDefault:defaultValue success:success error:error timeout:RACSignalAsynchronousWaitTimeout];
 }
 
-- (id)asynchronousFirstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError **)error timeout:(NSTimeInterval)timeout {
+- (id)asynchronousFirstOrDefault:(id)defaultValue success:(BOOL *)success error:(NSError * __autoreleasing *)error timeout:(NSTimeInterval)timeout {
 	NSCAssert([NSThread isMainThread], @"%s should only be used from the main thread", __func__);
 
 	__block id result = defaultValue;
@@ -396,13 +396,13 @@ static const NSTimeInterval RACSignalAsynchronousWaitTimeout = 10;
 	return result;
 }
 
-- (BOOL)asynchronouslyWaitUntilCompleted:(NSError **)error timeout:(NSTimeInterval)timeout {
+- (BOOL)asynchronouslyWaitUntilCompleted:(NSError * __autoreleasing *)error timeout:(NSTimeInterval)timeout {
 	BOOL success = NO;
 	[[self ignoreValues] asynchronousFirstOrDefault:nil success:&success error:error timeout:timeout];
 	return success;
 }
 
-- (BOOL)asynchronouslyWaitUntilCompleted:(NSError **)error {
+- (BOOL)asynchronouslyWaitUntilCompleted:(NSError * __autoreleasing *)error {
 	return [self asynchronouslyWaitUntilCompleted:error timeout:RACSignalAsynchronousWaitTimeout];
 }
 
